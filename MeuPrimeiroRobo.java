@@ -5,7 +5,7 @@ import robocode.*;
 // API help : https://robocode.sourceforge.io/docs/robocode/robocode/Robot.html
 
 /**
- * MeuPrimeiroRobo - a robot by Lucas
+ * MeuPrimeiroRobo - a robot by Lucas, Eduardo and Guilherme
  */
 public class MeuPrimeiroRobo extends Robot
 {
