@@ -69,8 +69,10 @@ public class MeuPrimeiroRobo extends Robot
 	 * onHitWall: What to do when you hit a wall
 	 */
 	public void onHitWall(HitWallEvent e) {
-		direcao = direcao * -1;
-		back(80);
-		turnRight(90);
-	}	
+
+    	direcao *= -1;
+
+    	ahead(80 * direcao);
+    	turnRight(90 * direcao);
+	}
 }
