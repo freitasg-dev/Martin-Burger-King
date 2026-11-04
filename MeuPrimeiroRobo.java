@@ -51,8 +51,14 @@ public class MeuPrimeiroRobo extends Robot
 	 * onScannedRobot: What to do when you see another robot
 	 */
 	public void onScannedRobot(ScannedRobotEvent e) {
-		fire(2);
-		back(100);
+
+		if (e.getDistance() < 150) {
+			fire(3);
+		} else if (e.getDistance() < 400) {
+				fire(2);
+		} else {
+			fire(1);
+		}
 	}
 
 	/**
