@@ -1,5 +1,6 @@
 package robo;
 import robocode.*;
+import java.awt.Color;
 //import java.awt.Color;
 
 // API help : https://robocode.sourceforge.io/docs/robocode/robocode/Robot.html
@@ -20,7 +21,14 @@ public class MeuPrimeiroRobo extends Robot
 
 		// setColors(Color.red,Color.blue,Color.green); // body,gun,radar
 
+		setBodyColor(Color.blue);
+		setGunColor(Color.black);
+		setRadarColor(Color.black);
+		setBulletColor(Color.red);
+		setScanColor(Color.white);
+
 		// Robot main loop
+
 		while(true) {
 			// Replace the next 4 lines with any behavior you would like
 			ahead(100);
