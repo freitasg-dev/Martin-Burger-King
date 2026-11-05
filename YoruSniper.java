@@ -12,11 +12,11 @@ public class YoruSniper extends AdvancedRobot { //usa robo avançado para ter fu
     int contadorRe = 0;
 
     public void run() {
-        setBodyColor(Color.blue);
+        setBodyColor(Color.black);
         setGunColor(Color.black);
         setRadarColor(Color.black);
-        setBulletColor(Color.red);
-        setScanColor(Color.white);
+        setBulletColor(Color.magenta);
+        setScanColor(Color.magenta);
 
         setAdjustGunForRobotTurn(true); // desbloquea o canhao (nao fica travado junto com o chassis)
         setAdjustRadarForGunTurn(true); // desbloquea o radar
