@@ -7,6 +7,8 @@ import java.awt.*;
 
 public class YoruSniper extends AdvancedRobot { //usa robo avançado para ter funçoes mais avançadas
 
+
+    //inicia variaveis
     int ladoCurva = 1;
     int contadorTurnos = 0;
     int contadorRe = 0;
@@ -23,7 +25,7 @@ public class YoruSniper extends AdvancedRobot { //usa robo avançado para ter fu
 
         while (true) {
 
-            if(contadorRe == 0) {
+            if(contadorRe == 0) { // se o contador for 0, ele para de dar ré
                 // mantem a aceleração maxima constante para a frente
                 setAhead(4000);
 
@@ -40,7 +42,7 @@ public class YoruSniper extends AdvancedRobot { //usa robo avançado para ter fu
                     contadorTurnos = 0; // reseta o contador
                 }
             } else {
-                contadorRe--;
+                contadorRe--; // se o contador não for 0, diminui ate ser 0
             }
 
             execute();
@@ -84,7 +86,7 @@ public class YoruSniper extends AdvancedRobot { //usa robo avançado para ter fu
         setBack(150);
         ladoCurva *= -1;
         contadorTurnos = 0;
-        contadorRe = 25;
+        contadorRe = 25; //contador de re vira 25 (0 -> 25) quando bate em uma parede
     }
 
     public void onHitRobot(HitRobotEvent e) {
