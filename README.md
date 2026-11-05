@@ -1,3 +1,4 @@
 # Martin-Burger-King
-Este repositório é fruto de um trabalho em grupo da disciplina de Introdução à Computação pelo IFSC.
-Neste repositório, iremos criar um robô via RoboCode para uma batalha executada no ambiente acadêmico.
+
+Repositório contendo o robô "YoruSniper", sendo um robô avançado meio agressivo, que anda lateralmente, e trava a mira ao ver um inimigo.
+
