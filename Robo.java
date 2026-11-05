@@ -5,7 +5,7 @@ import java.awt.*;
 
 //Robo feito por Lucas, Eduardo e Guilherme Simas
 
-public class Robo_V10 extends AdvancedRobot { //usa robo avançado para ter funçoes mais avançadas
+public class Robo extends AdvancedRobot { //usa robo avançado para ter funçoes mais avançadas
 
     int ladoCurva = 1;
     int contadorTurnos = 0;
@@ -32,7 +32,7 @@ public class Robo_V10 extends AdvancedRobot { //usa robo avançado para ter fun�
 
             // conta 36 turnos, quando chega no 36 ou passa de 36, inverte o lado (multiplica por -1, entao o ladoCurva vira -1)
             contadorTurnos++;
-            if (contadorTurnos >= 36) { //
+            if (contadorTurnos >= 36) {
                 ladoCurva *= -1;
                 contadorTurnos = 0; // reseta o contador
             }
